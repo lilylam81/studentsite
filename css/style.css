@@ -1,0 +1,33 @@
+body { 
+    font-family: Helvetica, Arial, sans-serif;
+    background: oldlace;
+    margin: 0;
+    display: grid;
+    align-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+   color: olivedrab;
+   max-width: 30em;
+   margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    color: olivedrab;
+}
