@@ -1,33 +1,117 @@
-body { 
+/* GLOBAL RESET */
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+/* GLOBAL COLORS */
+body { color: rgba(0, 0, 0, 0.8); }
+a { color: rgba(55, 125, 32, 0.655); }
+a:hover { color: rgba(55, 125, 32, 1); }
+
+/* GLOBAL TYPOGRAPHY */
+body {
     font-family: Helvetica, Arial, sans-serif;
-    background: oldlace;
-    margin: 0;
+    font-size: 88.75%; /* 14px */
+    line-height: 1.4;
+}
+
+/* HEADER */
+header {
+    background-color: rgba(55, 125, 32, 0.655);
+    color: oldlace;
+    padding: 1em;
     display: grid;
-    align-content: center;
-    min-height: 100vh;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
 }
 
-h1 {
-    font-size: 45px;
-    text-transform: uppercase;
-    text-align: center;
+header a {
+    color: oldlace;
+    text-decoration: none;
 }
 
-p {
-   color: olivedrab;
-   max-width: 30em;
-   margin: 0 auto;
-}
+header a:hover { color: rgb(255, 228, 188); }
 
-h2 {
-    text-align: center;
-}
+/* SITE ID */
+.site-id h1 { margin: 0; }
 
-ul {
-    margin: 0 auto;
+/* SITE NAV */
+.site-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-a {
-    color: olivedrab;
+.site-nav a {
+    display: block;
+    padding: 1em;
 }
+
+/* MAIN */
+main { background: rgba(0,0,0,.05); }
+
+/* FOOTER */
+footer {
+    border-top: 1px solid rgba(0,0,0,.05);
+    padding: 1em;
+}
+
+/* SOCIAL NAV */
+.social-nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-nav a {
+    display: block;
+    padding: 1em;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: rgba(55, 125, 32, 0.655) ;
+    text-align: center;
+    color: white;
+    padding: 6em 1em;
+}
+
+.hero h2 {
+    font-size: 6em;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.hero p {
+    max-width: 30em;
+    margin: 1em auto;
+}
+
+/* COURSES SECTION */
+.courses {
+    padding: 6em 1em;
+    display: grid;
+    justify-content: center;
+}
+
+.courses ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.courses h3 {
+    text-align: center;
+}
+
+
+/* FOR WEB DEV PURPOSES ONLY */
+/* body, * {
+    background-color: rgba(0,0,0,.05);
+    border: 1px solid rgba(0,0,0,.1);
+    color: rgba(0,0,0,.5);
+} */
