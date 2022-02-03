@@ -14,6 +14,10 @@ body {
     line-height: 1.4;
 }
 
+h1 {
+    font-size: 2em;
+}
+
 /* HEADER */
 header {
     background-color: rgba(55, 125, 32, 0.655);
@@ -151,6 +155,7 @@ aside {
     .two-col-sidebar {
         display: grid;
         grid-template-columns: 20em auto;
+        padding-bottom: 60vh;
     }
 
     .two-col-sidebar aside {
