@@ -34,7 +34,7 @@ header a {
 }
 
 header a:hover { 
-    color: rgb(255, 228, 188); 
+    color: rgb(250, 205, 138); 
 }
 
 /* SITE ID */
@@ -61,6 +61,10 @@ main {
     background: rgba(0,0,0,.05); 
 }
 
+section { 
+    padding: 3em 1em; 
+}
+
 /* FOOTER */
 footer {
     border-top: 1px solid rgba(0,0,0,.05);
@@ -85,12 +89,12 @@ footer {
 .hero {
     background-color: rgba(55, 125, 32, 0.655);
     text-align: center;
-    color: white;
+    color: oldlace;
     padding: 6em 1em;
 }
 
 .hero h2 {
-    font-size: 6em;
+    font-size: 5em;
     line-height: 1;
     text-transform: uppercase;
     margin: 0 auto;
@@ -118,15 +122,28 @@ footer {
     text-align: center;
 }
 
-/* STYLING FOR SUB PAGES */
+/* CUSTOM STYLING FOR SPECIFIC & SUB PAGES */
 .page-sub .hero {
     background-color: rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.8);
 }
 
+.page-home .hero {
+    background-image: url("../img/flower.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30vh 1em 25vh 1em;
+}
+
+.page-home header {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+}
+
 /* COURSEWORK PAGES WITH MULITIPLE PROJECT LISTS */
 .coursework {
-    padding: 3em 1em;
+    padding: 3em 1em 35vh 1em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -140,10 +157,6 @@ footer {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-}
-
-section { 
-    padding: 3em 1em; 
 }
 
 /* SIDEBAR/ASIDE */
