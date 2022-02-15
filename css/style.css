@@ -39,7 +39,7 @@ header a:hover {
 
 /* SITE ID */
 .site-id h1 { 
-    margin: 0; 
+    margin: 0 0.4em; 
 }
 
 /* SITE NAV */
@@ -162,7 +162,7 @@ footer {
 .page-home .hero {
     background-image: url("../img/flower.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center 25%;
     padding: 30vh 1em 25vh 1em;
 }
 
@@ -188,6 +188,13 @@ footer {
 .container {
     max-width: 1000px;
     margin: 0 auto;
+}
+
+/* GIST FIXER */
+@media (min-width: 768px){
+    .gist{
+        max-width: calc( 100vw - 20em );
+    }
 }
 
 /* SIDEBAR/ASIDE */
