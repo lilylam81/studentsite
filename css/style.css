@@ -193,7 +193,7 @@ footer {
 /* GIST FIXER */
 @media (min-width: 768px){
     .gist{
-        max-width: calc( 100vw - 20em );
+        max-width: calc(100vw - 20em);
     }
 }
 
