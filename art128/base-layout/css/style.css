@@ -223,26 +223,30 @@ body.demo::before {
     .row {
         display: flex;
         justify-content: space-between;
-        gap: 4%;
+        margin-left: -2%;
+        margin-right: -2%;
     }
+
     .row > .column {
         flex-grow: 1;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .row > .column.one-half {
-        max-width: 50%;
+        max-width: 46%;
     }
 
     .row > .column.one-third {
-        max-width: 33.333%;
+        max-width: 29.3333%;
     }
 
     .row > .column.two-thirds {
-        max-width: 66.666%;
+        max-width: 62.6666%;
     }
 
     .row > .column.one-forth {
-        max-width: 25%;
+        max-width: 21%;
     }
 
     .row > .column.centered {
