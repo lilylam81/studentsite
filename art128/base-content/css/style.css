@@ -13,8 +13,8 @@
             #BUTTONS
     #BASE LAYOUT
         #SIMPLE RESET
-        #MEDIAQUERIES
         #CONTAINER
+        #MEDIAQUERIES
         #GRID SYSTEM
             #CLEARFIX
     #BASE SITE
@@ -83,34 +83,14 @@ p {
 
 /* LINKS */
 a {
-    color: rgba(0,0,153,0.8);
+    color: rgba(189,204,195,1);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgba(0,0,153,1);
+    color: rgba(92,151,121,1);
     text-decoration: underline;
 }
-
-/* #BLOCK QUOTES  */
-blockquote {
-    font-size: 1.142em;
-    margin: 1.5em 0;
-    padding: 1.5em;
-    border-top: 0px solid #ccc;
-    border-bottom: 0px solid #ccc;
-  }
-  
-  blockquote cite {
-    display: block;
-    opacity: 0.8;
-    font-size: 0.875em;
-  }
-  
-  blockquote cite:before {
-    content: "—";
-    margin-right: 0.25em;
-  }
 
 /* HELPER CLASSES */
 .text-centered {
@@ -137,29 +117,29 @@ img {
 .button, button {
     font-size: inherit;
     line-height: 1;
-    background-color: rgba(0,0,255,1);
-    border: 1px solid rgba(0,0,255,1);
+    background-color: rgba(189,204,195,1);
+    border: 1px solid rgba(189,204,195,1);
     color: rgba(255,255,255,1);
     padding: 1em;
-    margin: 0.5em;
+    margin: 0.5em 0.5em 0.5em 0;
     display: inline-block;
     text-align: center;
     border-radius: 0.5em;
 }
 
 .button:hover, button:hover {
-    background-color: rgba(0,0,153,1);
-    border-color: rgba(0,0,153,1);
+    background-color: rgba(92,151,121,1);
+    border-color: rgba(92,151,121,1);
     color: rgba(255,255,255,1);
     text-decoration: none;
 }
 
 .button.alt {  
     background-color: transparent;
-    color: rgba(0,0,153,1);
+    color: rgba(189,204,195,1);
 }
 
 .button.alt:hover {
-    background-color: rgba(0,0,153,1);
+    background-color: rgba(92,151,121,1);
     color: rgba(255,255,255,1);
 }
