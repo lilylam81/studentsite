@@ -179,6 +179,7 @@ footer {
 
 .project {
     margin: 2em;
+    flex-basis: 15.625em;
 }
 
 /* LAYOUT */
