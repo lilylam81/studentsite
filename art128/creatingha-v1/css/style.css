@@ -31,7 +31,7 @@
 /* TYPOGRAPHY */
 body {
     font-size: 87.5%; /* 14px */
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Avenir Next', 'Nunito Sans', 'Montserrat', sans-serif;
     line-height: 1.5;
     color: rgba(0,0,0,0.8);
 }
@@ -41,6 +41,7 @@ body {
    48, 36, 24, 21, 18, 16 */
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Optima', 'Marcellus', 'Belleza', serif;
     margin: 0.5em 0;
 }
 
@@ -101,18 +102,17 @@ a:hover {
     width: 100%;
 }
 
-.horizontal-center{
+.horizontal-center {
     margin-left: auto;
     margin-right: auto;
 }
 
-@media (min-width: 768px) {
-    .hide-on-largescreens {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;     
+.hide-visually {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;     
     }
-}
+
 
 /* IMAGES */
 img {
@@ -170,13 +170,13 @@ body { margin: 0; }
 }
 
 @media (min-width: 1050px) {
-    body{
+    body {
        font-size: 100%; /* 16px */
     }
 }
 
 @media (min-width: 1250px) {
-    body{
+    body {
         font-size: 112.5%; /* 18px */
      }
     .container {
@@ -302,8 +302,8 @@ body.demo::before {
     text-align: center;
 }
 
-/* SITE NAV */
-.site-nav ul {
+/* SITE NAV & SOCIAL NAV */
+.site-nav ul, .social-nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -311,7 +311,7 @@ body.demo::before {
     justify-content: center;
 }
 
-.site-nav a {
+.site-nav a, .social-nav a {
     padding: 1em;
     display: block;
 }
