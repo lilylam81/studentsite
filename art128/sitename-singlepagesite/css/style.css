@@ -101,7 +101,7 @@ a:hover {
     width: 100%;
 }
 
-.horizontal-center{
+.horizontal-center {
     margin-left: auto;
     margin-right: auto;
 }
@@ -170,13 +170,13 @@ body { margin: 0; }
 }
 
 @media (min-width: 1050px) {
-    body{
+    body {
        font-size: 100%; /* 16px */
     }
 }
 
 @media (min-width: 1250px) {
-    body{
+    body {
         font-size: 112.5%; /* 18px */
      }
     .container {
