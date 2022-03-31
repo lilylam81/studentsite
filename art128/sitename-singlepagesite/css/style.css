@@ -515,7 +515,7 @@ img, svg, canvas, video {
     display: block;
     width: 150px;
     margin: 0.5em auto;
-    border-bottom: 3px solid rgba(0,0,0,0.2)
+    border-bottom: 3px solid rgba(0,0,0,0.2);
 }
 
 #about {
