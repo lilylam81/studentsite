@@ -303,8 +303,10 @@ section {
 
 /* HERO */
 .hero {
-    padding: 6em 4%;
-    background-color: rgba(0,0,0,0.1);
+    background-image: url("../img/cards1.jpg");
+    background-size: cover;
+    background-position: center 35%;
+    padding: 8vh 5em;
     text-align: center;
 }
 
@@ -312,6 +314,7 @@ section {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+    padding: 6em 4%;
 }
 
 /* TOGGLE NAV */
@@ -353,7 +356,7 @@ section {
 
 /* NAVICON */
 .toggle-nav .menu-button.navicon {
-    color: rgba (255,255,255,0);
+    color: rgba(240,241,236,1);
 }
 
 .toggle-nav .menu-button.navicon::after {
