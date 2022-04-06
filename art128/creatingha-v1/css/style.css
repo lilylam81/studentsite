@@ -185,6 +185,10 @@ body { margin: 0; }
 }
 
 /* SEMANTIC GRID SYSTEM */
+.row.swapped {
+    flex-direction: row-reverse;
+}
+
 .row > .column {
     margin-bottom: 4%;
 }
@@ -303,18 +307,38 @@ section {
 
 /* HERO */
 .hero {
-    background-image: url("../img/cards1.jpg");
-    background-size: cover;
-    background-position: center 35%;
-    padding: 8vh 5em;
+    padding: 2em 0 0 0;
     text-align: center;
+    position: relative;
 }
 
-.hero h1, .hero p {
+.hero img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.hero-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1, .hero h4 {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    padding: 6em 4%;
+}
+
+.hero h1 {
+    font-family: 'Avenir Next', 'Nunito Sans', 'Montserrat', sans-serif;
+    color: rgba(26,50,47,1);
+    margin: 0;
+}
+
+.hero h3 {
+    color: rgba(0,110,99,0.8);
 }
 
 /* TOGGLE NAV */
@@ -467,4 +491,9 @@ img, svg, canvas, video {
 
 #bio, #contact {
     background: rgba(240,241,236,1);
+}
+
+.content {
+    background-color: rgba(240,241,236,1);
+    padding: 10px;
 }
