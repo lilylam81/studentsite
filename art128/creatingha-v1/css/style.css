@@ -181,6 +181,7 @@ body { margin: 0; }
      }
     .container {
         max-width: 1200px;
+        padding: 0;
     }
 }
 
@@ -493,7 +494,15 @@ img, svg, canvas, video {
     background: rgba(240,241,236,1);
 }
 
+hr {
+    border: 1px solid rgba(0,0,0,0.8);
+}
+
 .content {
     background-color: rgba(240,241,236,1);
     padding: 10px;
+}
+
+.column.one-half.contact {
+    margin-top: 6.7em;
 }
