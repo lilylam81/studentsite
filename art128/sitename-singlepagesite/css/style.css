@@ -395,7 +395,7 @@ section {
 
 /* NAVICON */
 .toggle-nav .menu-button.navicon {
-    color: rgba (255,255,255,0);
+    color: rgba(255,255,255,0);
 }
 
 .toggle-nav .menu-button.navicon::after {
