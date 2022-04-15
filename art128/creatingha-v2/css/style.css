@@ -498,9 +498,9 @@ img, svg, canvas, video {
     max-width: 38em;
 }
 
-.section-title.one {
+/* .section-title.one {
     max-width: 50rem;
-}
+} */
 
 .section-title::after {
     content: "";
@@ -550,7 +550,7 @@ td.year {
 }
 
 @media (min-width: 768px) {
-    .column.one-half.contact {
+    .column.one-half.contact-info {
         margin-top: 5.85em;
     }
 }
