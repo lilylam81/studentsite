@@ -457,6 +457,12 @@ form textarea {
     line-height: 1.5;
 }
 
+@media (min-width: 1650px) {
+    form textarea {
+        min-height: 20em;
+    }
+}
+
 form input[type="submit"], form input[type="file"] {
     margin-top: 1.5em;
     width: auto;
