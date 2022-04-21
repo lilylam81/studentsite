@@ -41,7 +41,7 @@ body {
    48, 36, 24, 21, 18, 16 */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Optima', 'Marcellus', 'Belleza', serif;
+    font-family: 'Optima', 'Belleza', 'Marcellus', serif;
     margin: 0.5em 0;
 }
 
@@ -583,8 +583,8 @@ td.year {
 }
 
 .content p.padding {
-    padding-top: 4.5vh;
-    padding-bottom: 7.75vh;
+    padding-top: 3em;
+    padding-bottom: 4em;
 }
 
 @media (min-width: 768px) {
