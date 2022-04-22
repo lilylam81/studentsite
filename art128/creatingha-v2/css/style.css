@@ -111,7 +111,7 @@ a:hover {
     position: absolute;
     top: -9999px;
     left: -9999px;     
-    }
+}
 
 /* IMAGES */
 img {
@@ -186,8 +186,8 @@ body { margin: 0; }
 @media (min-width: 1250px) {
     body {
         font-size: 112.5%; /* 18px */
-     }
-
+    }
+    
     .container {
         max-width: 1200px;
     }
