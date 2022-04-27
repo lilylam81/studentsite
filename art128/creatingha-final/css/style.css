@@ -41,7 +41,7 @@ body {
    48, 36, 24, 21, 18, 16 */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Optima', 'Belleza', 'Marcellus', serif;
+    font-family: 'Optima', 'Arsenal', 'Belleza', serif;
     margin: 0.5em 0;
 }
 
@@ -273,7 +273,10 @@ body { margin: 0; }
 /* STYLING FOR BOTH HEADER & FOOTER */
 .site-header a, .site-footer a {
     color: rgba(26,50,47,1);
-    font-weight: 500;
+}
+
+.site-header a {
+    font-weight: bold;
 }
 
 .site-header a:hover, .site-footer a:hover {
@@ -504,22 +507,6 @@ p.dropcaps:first-of-type:first-letter {
     background: rgba(240,241,236,1);
 }
 
-hr {
-    border: 1px solid rgba(0,0,0,0.8);
-}
-
-table {
-    margin-left: -0.2em;
-}
-
-td.year {
-    padding: 0 1em 0 0;
-}
-
-tr {
-    vertical-align: top;
-}
-
 /* CUSTOM GRID FOR BIO */
 @media (min-width: 768px) {
     .bio-wrapper {
@@ -570,44 +557,66 @@ tr {
     }
 }
 
+hr {
+    border: 1px solid rgba(0,0,0,0.8);
+}
+
+table.awards {
+    margin-left: -0.2em;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+table.awards em {
+    font-weight: bold;
+}
+
+table.awards td.year {
+    padding: 0 1em 0 0;
+    font-weight: bold;
+}
+
+table.awards tr {
+    vertical-align: top;
+}
+
 #gallery h2 {
     padding-bottom: 0.5em;
 }
 
 /* CUSTOM GRID FOR GALLERY */
 @media (min-width: 768px) {
-    .row.mediums {
-        --gutter: 2em;
+    .cardwrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto;
+        gap: 2em;
     }
 
-    .row.mediums, 
-    .row.mediums .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .row.mediums > .column,
-    .row.mediums .row > .column {
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: var(--gutter);
-    }
-
-    .row.mediums > .column.one-third {
-        max-width: calc(33.3333% - var(--gutter));
-    }
-
-    .row.mediums > .column.two-thirds {
-        max-width: 66.6666%;
-    }
-
-    .row.mediums .row > .column.one-half {
-        max-width: calc(50% - calc(var(--gutter) / 2));
+    .card1 {
+        grid-row: 1 / 3;
     }
 }
 
 .content {
     background-color: rgba(240,241,236,1);
+    margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-bottom: 0;
+    }
+
+    .content.card1 h3 {
+        padding-top: 3.5em;
+    }
+}
+
+@media (min-width: 1450px) {
+    .content.card1 h3 {
+        padding-top: 3em;
+    }
 }
 
 .content h3 {
@@ -616,11 +625,6 @@ tr {
 
 .content p, .content h4 {
     margin: 0 1.5em;
-}
-
-.content p.padding {
-    padding-top: 3em;
-    padding-bottom: 4em;
 }
 
 @media (min-width: 768px) {
