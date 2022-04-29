@@ -335,6 +335,10 @@ body { margin: 0; }
     display: block;
 }
 
+.social-nav a {
+    padding-bottom: 0;
+}
+
 .site-nav .menu-button {
     display: none;
 }
@@ -355,7 +359,7 @@ body { margin: 0; }
 /* SITE FOOTER */
 .site-footer {
     background-color: rgba(189,204,195,0.5);
-    padding-bottom: 0.5em;
+    padding: 1em 0;
 }
 
 /* SECTIONS */
