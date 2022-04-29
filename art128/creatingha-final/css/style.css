@@ -259,7 +259,13 @@ body { margin: 0; }
 
 /* SITE HEADER */
 .site-header {
-    padding: 1em 0;   
+    padding: 1em 0 0.7em 0;   
+}
+
+@media (max-width: 767px) {
+    .site-header {
+        padding: 0.5em 0 0.3em 0;   
+    }
 }
 
 /* ON LARGER SCREENS PLACE LOGO LEFT & NAV RIGHT */
@@ -277,6 +283,18 @@ body { margin: 0; }
 
 .site-header a {
     font-weight: bold;
+}
+
+@media (min-width: 1050px) {
+    .site-header a {
+        font-size: 112.5%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .site-header a {
+        font-size: 100%;
+    }
 }
 
 .site-header a:hover, .site-footer a:hover {
@@ -357,10 +375,29 @@ section {
 }
 
 /* TOGGLE NAV */
-@media (max-width: 767px) {
-    .toggle-nav .site-id {
-        position: absolute;
+@media (max-width: 1049px) {
+    .toggle-nav .container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .toggle-nav[data-navstate="open"] .container {
+        display: block;
+    }
+
+    .toggle-nav[data-navstate="open"] .site-id {
+        position: absolute;
+    }    
+
+    .toggle-nav[data-navstate="open"] .site-nav {
+        padding-top: 1.5em;
+    }    
+
+    .toggle-nav[data-navstate="open"] .site-nav ul {
+        padding-top: 2em;
+    }  
 
     .toggle-nav .site-nav {
         text-align: right;
@@ -369,7 +406,7 @@ section {
     .toggle-nav .menu-button {
         display: inline-block;
         cursor: pointer;
-        margin: 0.8em 0;
+        margin: 0;
         padding: 0;
         background-color: transparent;
         border: none;
@@ -408,14 +445,25 @@ section {
 .toggle-nav .menu-button.navicon::after {
     content: "☰";
     display: inline-block;
-    margin-top: -0.1em;
+    margin-top: -0.25em;
     margin-left: 0.5em;
     color: rgba(0,0,0,0.8);
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .toggle-nav[data-navstate="open"] .menu-button.navicon::after {
     content: "✕";
+    font-size: 1.5em;
+}
+
+@media (max-width: 499px) {
+    .toggle-nav .menu-button.navicon::after {
+        font-size: 2.1em;
+    }
+
+    .toggle-nav[data-navstate="open"] .menu-button.navicon::after {
+        font-size: 2.1em;
+    }
 }
 
 /* FORMS */
